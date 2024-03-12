@@ -1,0 +1,66 @@
+.column1 {
+	width: 100%;
+	grid-area: column1;
+}
+
+.minus {
+	border: 1px solid white;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		background-color: red;
+	}
+}
+
+.plus {
+	border: 1px solid white;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		background-color: green;
+	}
+}
+
+.column2 {
+	display: flex;
+	border-left: 1px solid gray;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-area: column2;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas:
+		'column1 column2'
+		'column1 column2';
+	padding-top: 70px;
+}
+
+.trash {
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: red;
+	}
+}
